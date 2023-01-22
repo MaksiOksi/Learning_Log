@@ -26,13 +26,15 @@ SECRET_KEY = 'django-insecure-to%q+h=vabz#ki1(k@q3m+s^ghvu1=&0di52+05^@_2^3^+)8@
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+# My Settings
+LOGIN_URL = 'users:login'
 
 # Application definition
 
 INSTALLED_APPS = [
     'learning_log_app',
     'users',
+    'bootstrap4',
     
     'django.contrib.admin',
     'django.contrib.auth',

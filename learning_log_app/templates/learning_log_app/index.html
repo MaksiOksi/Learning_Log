@@ -7,9 +7,17 @@
 <body>
 {% extends "learning_log_app/base.html" %}
 
-{% block content %}
-    <p>Learning Log to track my notes for any topic</p>
-{% endblock content %}
+{% block page_header %}
+  <div class="jumbotrot">
+      <h1 class="display-3">Track your life events here.</h1>
+
+      <p class="lead">Welcome to Learning Log, site for any notes!</p>
+
+      <a class="btn btn-lg btn-primary" href="{% url 'users:register' %}"
+      role="button">Log In &raquo;</a>
+  </div>
+{% endblock page_header %}
+
 
 </body>
 </html>

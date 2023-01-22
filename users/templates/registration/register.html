@@ -9,7 +9,7 @@
 
 {% block content %}
 
-  <form method="post" action="{% url 'users:register' %}">Sing in
+  <form method="post" action="{% url 'users:register' %}"><h1>Registration</h1>
     {% csrf_token %}
     {{ form.as_p }}
 
